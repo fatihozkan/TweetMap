@@ -14,12 +14,13 @@ You can check out demo via this link http://tweetmap-starlabs.rhcloud.com/
 
 You can run TweetMap in your machine.
 
-1. Install Node.js from [https://nodejs.org/](https://nodejs.org/)
-2. Checkout the project
+* Install Node.js from [https://nodejs.org/](https://nodejs.org/)
+* Checkout the project
 ```
 git clone https://github.com/fatihozkan/TweetMap.git
 ```
-3. Set your Twitter Api Keys inside *config.js* file.
+* Set your Twitter Api Keys inside *config.js* file.
+
 ```
 module.exports = {
     twitter: {
@@ -30,12 +31,17 @@ module.exports = {
     }
 }
 ```
-4. Install the dependencies
+
+* Install the dependencies
+
 ```
 npm install
 ```
-5. Run the application
+
+* Run the application
+
 ```
 node ./bin/www
 ```
-6. Type localhost:8000 to your browser
+
+* Type localhost:8000 to your browser
