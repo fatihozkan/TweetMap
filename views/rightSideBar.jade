@@ -1,0 +1,16 @@
+.rightSideBar
+    div
+        ul.nav.nav-tabs.mainTab
+            li.active
+                a(href="#tweetListContent" data-toggle="tab" class="active") Tweets
+            li
+                a(href="#picturesContent" data-toggle="tab") Pictures
+            //li
+            //    a(href="#hashTags" data-toggle="tab") Hashtags
+
+        div.tab-content
+            #tweetListContent.tab-pane.active
+                ul#tweetList
+            #picturesContent.tab-pane
+            //#hashTagsContent.tab-pane
+

@@ -1,0 +1,191 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #242426;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body, #map {
+    height: 100%;
+    width: 100%;
+}
+
+span.mapTweetCount {
+    display: none;
+    font-size: 40px;
+    color: #ffffff;
+    position: absolute;
+    float: right;
+    right: 10px;
+    z-index: 9999 !important;
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.container #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container .rightSideBar {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+
+}
+
+.container .rightSideBar .mainTab {
+    border-bottom: none !important;
+}
+
+.container .rightSideBar .mainTab > li > a {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    color: #ffffff;
+    border: none !important;
+    margin-right: 0 !important;
+}
+
+.container .rightSideBar .mainTab > li > a:hover {
+    color: #242426;
+}
+
+.container .rightSideBar .mainTab > li.active > a {
+    color: #242426;
+    background-color: #cccccc;
+}
+
+.container .rightSideBar #tweetListContent {
+
+}
+
+.container .rightSideBar #tweetListContent #tweetList {
+    padding: 0 !important;
+    margin: 10px 0 0 0 !important;
+}
+
+.container .rightSideBar #tweetListContent #tweetList li {
+    list-style: none;
+    color: #fff !important;
+    padding: 5px !important;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.container .rightSideBar #tweetListContent #tweetList li a, .container .rightSideBar .mainTab .tweetListContent #tweetList li div {
+    color: #ccc !important;
+}
+
+.container .rightSideBar #tweetListContent #tweetList li .profilePictureWrapper {
+    float: left;
+    width: 53px;
+}
+
+.container .rightSideBar #tweetListContent #tweetList li .profilePictureWrapper .profilePicture {
+    opacity: 0.7;
+    border-radius: 100px;
+    margin-top: 1px;
+    margin-left: 2px;
+    background: #0e151e;
+    float: left;
+    height: 48px;
+    width: 48px;
+    margin-right: 5px;
+}
+
+.container .rightSideBar #tweetListContent #tweetList li .tweetContentWrapper {
+    margin-left: 54px;
+}
+
+.container .rightSideBar #tweetListContent #tweetList li .tweetContentWrapper .text {
+    font-size: 11px !important;
+}
+
+.container .rightSideBar #tweetListContent #tweetList li .tweetContentWrapper .userName {
+
+}
+
+#picturesContent {
+    padding: 0 !important;
+    margin: 10px 0 0 0 !important;
+}
+
+#picturesContent .picture {
+    display: block;
+    position: relative;
+    float: left;
+    background-position: 50% 50%;
+    background-size: cover;
+    /*opacity: 0.4;*/
+    box-shadow: 0 0 3px solid #000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.container .footer {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer .pane {
+    min-width: 230px;
+    float: left;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.footer .pane ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer .pane ul li {
+    list-style: none;
+    padding: 2px;
+}
+
+.footer .pane ul li span {
+    color: #ccc;
+}
+
+.footer .pane h3 {
+    /*font-size: 14px;*/
+    line-height: 21px;
+    border-bottom: 1px solid #4F4F4F;
+    padding: 0 0 5px 0;
+    color: #ccc;
+}
+
+.footer .pane #topCountryList .name, .footer .pane #topCityList .name, .footer .pane #topHashTags .name, .footer .pane #topContinents .name {
+    font-size: 11px;
+}
+
+.footer .pane #topCountryList .count, .footer .pane #topCityList .count, .footer .pane #topHashTags .count, .footer .pane #topContinents .count {
+    font-size: 10px;
+    float: right;
+}
+
+.footer .pane span.tweetCount {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.footer .pane #topCityList {
+    width: 300px;
+}
